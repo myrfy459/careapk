@@ -1,0 +1,101 @@
+/* home.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #eaeaea, #ffffff);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+header {
+    background: linear-gradient( to right, #15bd5b, #007db8);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.header-text h1 {
+    color: #ecf0f1; 
+    margin: 0;
+    font-size: 24px;
+}
+
+button.Profil {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-home {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background: url('background/blur-hospital_1203-7972.png') no-repeat center center; 
+    background-size: cover;
+    height: calc(100vh - 100px);
+}
+
+.menu-home div {
+    flex: 1;
+    text-align: center;
+    margin: 20px;
+}
+
+.menu-home button {
+    background: linear-gradient(to right, #2ecc71, #27ae60); 
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-home button:hover {
+    background: linear-gradient(to right, #27ae60, #2ecc71); 
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.menu-home img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.menu-home a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.menu-home button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #27ae60;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 1s ease-in;
+}
